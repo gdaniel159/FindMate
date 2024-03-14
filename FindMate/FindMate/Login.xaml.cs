@@ -21,5 +21,9 @@ namespace FindMate
         {
 
         }
+        private void btnRegister_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Register());
+        }
     }
 }

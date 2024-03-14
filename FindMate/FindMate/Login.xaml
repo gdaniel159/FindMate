@@ -1,43 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FindMate.Login">
+             x:Class="FindMate.Login"
+             NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
-        <StackLayout>
-
-            <StackLayout HorizontalOptions="End" VerticalOptions="Start">
-                <Button Text="Register" 
-                   VerticalOptions="StartAndExpand"
-                   HorizontalOptions="EndAndExpand"
-                   Margin="15"
-                   Background="Transparent"/>
-            </StackLayout>
-
-            <StackLayout HorizontalOptions="CenterAndExpand">
-                <Label Text="Login" 
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand"
-                   FontAttributes="Bold"
-                   FontSize="Title"/>
-            </StackLayout>
-
+        <ScrollView>
             <StackLayout>
-                <Image Source="logo.png" HeightRequest="200" WidthRequest="200" Margin="20, 50, 20, 20"></Image>
-            </StackLayout>
+                <StackLayout HorizontalOptions="End" VerticalOptions="Start">
+                    <Button Text="Register" 
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="EndAndExpand"
+                       Margin="15"
+                       Background="Transparent"
+                       x:Name="btnRegister"
+                       Clicked="btnRegister_Clicked"/>
+                </StackLayout>
 
-            <StackLayout Margin="0, 20, 0, 0">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Login" 
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       FontAttributes="Bold"
+                       FontSize="Title"/>
+                </StackLayout>
 
-                <Frame Padding="10" BackgroundColor="Transparent" BorderColor="#bdc3c7" HasShadow="True" CornerRadius="15" Margin="30, 10, 30, 0">
-                    <Entry Placeholder="Correo Electrónico" x:Name="lblEmail" />
-                </Frame>
-                <Frame Padding="10" BackgroundColor="Transparent" BorderColor="#bdc3c7" CornerRadius="15" Margin="30, 15, 30, 0">
-                    <Entry Placeholder="Contraseña" IsPassword="True" x:Name="lblPsw" />
-                </Frame>
-                <Button Text="Iniciar Sesión" Margin="30, 30, 30, 0" Background="#007BFF" TextColor="White" CornerRadius="35" Padding="0, 24, 0, 24" x:Name="btnIniciar" Clicked="btnIniciar_Clicked"></Button>
-                <Label Text="Olvidó su contraseña?" Margin="30, 40, 30, 0" HorizontalTextAlignment="Center" FontSize="18" TextColor="#007BFF"></Label>
-                
+                <StackLayout>
+                    <Image Source="logo.png" HeightRequest="200" WidthRequest="200" Margin="20, 50, 20, 20"></Image>
+                </StackLayout>
+
+                <StackLayout Margin="0, 20, 0, 0">
+
+                    <Frame Padding="10" BackgroundColor="Transparent" BorderColor="#bdc3c7" HasShadow="True" CornerRadius="15" Margin="30, 10, 30, 0">
+                        <Entry Placeholder="Correo Electrónico" x:Name="lblEmail" />
+                    </Frame>
+                    <Frame Padding="10" BackgroundColor="Transparent" BorderColor="#bdc3c7" CornerRadius="15" Margin="30, 15, 30, 0">
+                        <Entry Placeholder="Contraseña" IsPassword="True" x:Name="lblPsw" />
+                    </Frame>
+                    <Button Text="Iniciar Sesión" Margin="30, 30, 30, 0" Background="#007BFF" TextColor="White" CornerRadius="35" Padding="0, 24, 0, 24" x:Name="btnIniciar" Clicked="btnIniciar_Clicked"></Button>
+                    <Button BackgroundColor="Transparent" Text="Olvidó su contraseña?" Margin="30, 40, 30, 0" FontSize="18" TextColor="#007BFF"></Button>
+
+                </StackLayout>
             </StackLayout>
-            
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

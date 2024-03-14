@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FindMate.Register"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="Center" Margin="20">
+                <Image Source="https://i.ibb.co/Lh3b4zr/dove-of-peace-7053400-1280.png" WidthRequest="200" HeightRequest="200" />
+
+                <Label Text="Crear Cuenta" TextColor="black" FontAttributes="Bold" FontSize="45" HorizontalOptions="CenterAndExpand" Margin="0,0,0,20"/>
+                <Label Text="DNI" TextColor="#0567db" FontSize="20"/>
+
+                <Frame BorderColor="Black" Padding="5" Margin="0,0,0,10" CornerRadius="5">
+                    <Entry Placeholder="Ingresa tu DNI" PlaceholderColor="Black" TextColor="Black" BackgroundColor="White"/>
+                </Frame>
+
+                <Label Text="Correo" TextColor="#0567db" FontSize="20"/>
+                <Frame BorderColor="Black" Padding="5" Margin="0,0,0,10" CornerRadius="5">
+                    <Entry Placeholder="Ingresa tu correo" PlaceholderColor="Black" TextColor="Black" BackgroundColor="White"/>
+                </Frame>
+
+                <Label Text="Numero Telefonico" TextColor="#0567db" FontSize="20"/>
+                <Frame BorderColor="Black" Padding="5" Margin="0,0,0,10" CornerRadius="5">
+                    <Entry Placeholder="Ingresa tu numero (+51 🇵🇪)" PlaceholderColor="Black" IsPassword="True" TextColor="Black" BackgroundColor="White"/>
+                </Frame>
+
+                <Label Text="Contraseña" TextColor="#0567db" FontSize="20"/>
+                <Frame BorderColor="Black" Padding="5" Margin="0,0,0,10" CornerRadius="5">
+                    <Entry Placeholder="Ingresa tu contraseña" PlaceholderColor="Black" IsPassword="True" TextColor="Black" BackgroundColor="White"/>
+                </Frame>
+
+                <Label Text="Repetir Contraseña" TextColor="#0567db" FontSize="20"/>
+                <Frame BorderColor="Black" Padding="5" Margin="0,0,0,10" CornerRadius="5">
+                    <Entry Placeholder=" Repite la contraseña" PlaceholderColor="Black" IsPassword="True" TextColor="Black" BackgroundColor="White"/>
+                </Frame>
+
+                <Frame Padding="0" Margin="0,0,0,20" CornerRadius="10">
+                    <Button Text="Registrar" BackgroundColor="#0567db" TextColor="White" HorizontalOptions="FillAndExpand" x:Name="btnRegister" Clicked="btnRegister_Clicked"/>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

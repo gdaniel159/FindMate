@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FindMate.RegisterMessage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <FlexLayout AlignItems="Center" JustifyContent="SpaceBetween" Direction="Column">
+            <StackLayout>
+                <Image Source="horizontal_logo.png" Margin="0, 40, 0, 20"></Image>
+            </StackLayout>
+            <StackLayout>
+                <Image Source="icon_confirm.png" WidthRequest="200" HeightRequest="200"></Image>
+                <Label Text="Cuenta creada" HorizontalOptions="Center" TextColor="#0667DB" FontSize="Title" FontAttributes="Bold"/>
+                <Label Text="con exito" HorizontalOptions="Center" TextColor="#000" FontSize="Title" FontAttributes="Bold" />
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Ingresar" BackgroundColor="#0667DB" TextColor="#fff" CornerRadius="10" Margin="0, 20, 0, 40" x:Name="btnIngresar" Clicked="btnIngresar_Clicked" />
+            </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>
