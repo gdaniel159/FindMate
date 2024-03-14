@@ -46,7 +46,7 @@
                         </Entry>
                     </Frame>
                     <Button Text="Iniciar Sesión" Margin="30, 30, 30, 0" Background="#007BFF" TextColor="White" CornerRadius="35" Padding="0, 24, 0, 24" x:Name="btnIniciar" Clicked="btnIniciar_Clicked"></Button>
-                    <Button BackgroundColor="Transparent" Text="Olvidó su contraseña?" Margin="30, 40, 30, 0" FontSize="18" TextColor="#007BFF"></Button>
+                    <Button BackgroundColor="Transparent" Text="Olvidó su contraseña?" Margin="30, 40, 30, 0" FontSize="18" TextColor="#007BFF" x:Name="btnOlvidar" Clicked="btnOlvidar_Clicked"></Button>
 
                 </StackLayout>
             </StackLayout>
