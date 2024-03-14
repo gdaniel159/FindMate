@@ -6,8 +6,8 @@ using Android.App;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FindMate.Android")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("FindMate")]
+[assembly: AssemblyDescription("Aplicación especializada en la busqueda de personas.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("FindMate.Android")]

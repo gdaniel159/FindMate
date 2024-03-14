@@ -16,7 +16,6 @@ namespace FindMate
         {
             InitializeComponent();
         }
-
         private void btnIniciar_Clicked(object sender, EventArgs e)
         {
 

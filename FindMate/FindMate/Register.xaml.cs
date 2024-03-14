@@ -21,5 +21,9 @@ namespace FindMate
         {
             Navigation.PushAsync(new RegisterMessage());
         }
+        private async void OnLabelClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Login()); 
+        }
     }
 }
