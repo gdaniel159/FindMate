@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using FindMate.View.FeedPosts;
+using FindMate.View.NotificAlert;
 
 namespace FindMate
 {
@@ -10,7 +12,7 @@ namespace FindMate
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NotificAlert();
         }
 
         protected override void OnStart()

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FindMate.View.NotificAlert.NotificAlert">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#fff">
+            <FlexLayout BackgroundColor="#0667DB" Direction="Row" AlignItems="Center" HeightRequest="50">
+                <!--<Label Text="x" FontSize="40" FontAttributes="Bold" Margin="50, 0, 0, 4"/>-->
+                <ImageButton Source="arrowBack.png" BackgroundColor="#0667DB" WidthRequest="35"
+                             Margin="35,0,0,0"/>
+                <Label Text="Notificar Autoridades" FontSize="23" Margin="45,0,0,0" TextColor="#fff"/>
+            </FlexLayout>
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Label Text="Escoje una opcion para comunicarte" TextColor="#A3A3A3" FontSize="22"
+                       Margin="10,15,0,0"/>
+                <FlexLayout Direction="Column">
+                    <Frame Margin="10,20,10,10" CornerRadius="10">
+                        <FlexLayout>
+                            <Image Source="iconalert.png" WidthRequest="160" HeightRequest="100"/>
+                            <StackLayout Margin="15,0,0,0">
+                                <Label Text="Contactar con usuario" TextColor="#000"
+                                        FontAttributes="Bold" FontSize="21"/>
+                                <Label Text="Para contactarse directamente con la persona denunciante de la desaparicion y brindar ayuda e información" 
+                                       TextColor="#000" FontSize="17"/>
+                            </StackLayout>
+                        </FlexLayout>
+                    </Frame>
+                    <Frame Margin="10,20,10,10" CornerRadius="10">
+                        <FlexLayout>
+                            <Image Source="policealert.png" WidthRequest="160" HeightRequest="100"/>
+                            <StackLayout Margin="5,0,0,0">
+                                <Label Text="Contactar con usuario" TextColor="#000"
+                                       FontAttributes="Bold" FontSize="21"/>
+                                <Label Text="Para contactarse con una central policial para dar a seguimiento del caso y brindar informacion directamente" 
+                                       TextColor="#000" FontSize="17"/>
+                            </StackLayout>
+                        </FlexLayout>
+                    </Frame>
+                    <Frame Margin="10,20,10,0" CornerRadius="10">
+                        <FlexLayout>
+                            <Image Source="cliboard.png" WidthRequest="160" HeightRequest="100"/>
+                            <StackLayout Margin="5,0,0,0">
+                                <Label Text="Listado de denuncias" TextColor="#000"
+                                       FontAttributes="Bold" FontSize="21"/>
+                                <Label Text="Para ver el registro y detalle del caso tambien se mostrara el seguimiento si sigue en proceso" 
+                                       TextColor="#000" FontSize="17"/>
+                            </StackLayout>
+                        </FlexLayout>
+                    </Frame>
+                </FlexLayout>
+                <StackLayout VerticalOptions="EndAndExpand" Margin="0,0,0,10">
+                    <FlexLayout JustifyContent="SpaceAround">
+                        <ImageButton Source="homeIco.png" BackgroundColor="#fff" WidthRequest="35"/>
+                        <ImageButton Source="magnifier.png" BackgroundColor="#fff" WidthRequest="35"/>
+                        <ImageButton Source="userIcon.png" BackgroundColor="#fff" WidthRequest="35"/>
+                    </FlexLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
