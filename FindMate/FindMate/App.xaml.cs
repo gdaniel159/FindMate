@@ -12,7 +12,7 @@ namespace FindMate
         {
             InitializeComponent();
 
-            MainPage = new NotificAlert();
+            MainPage = new FeedPosts();
         }
 
         protected override void OnStart()

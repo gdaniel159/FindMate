@@ -50,9 +50,9 @@
                 </FlexLayout>
                 <StackLayout VerticalOptions="EndAndExpand" Margin="0,0,0,10">
                     <FlexLayout JustifyContent="SpaceAround">
-                        <ImageButton Source="homeIco.png" BackgroundColor="#fff" WidthRequest="35"/>
-                        <ImageButton Source="magnifier.png" BackgroundColor="#fff" WidthRequest="35"/>
-                        <ImageButton Source="userIcon.png" BackgroundColor="#fff" WidthRequest="35"/>
+                        <ImageButton Source="homeIco.png" BackgroundColor="#fff" WidthRequest="30"/>
+                        <ImageButton Source="magnifier.png" BackgroundColor="#fff" WidthRequest="30"/>
+                        <ImageButton Source="userIcon.png" BackgroundColor="#fff" WidthRequest="30"/>
                     </FlexLayout>
                 </StackLayout>
             </StackLayout>

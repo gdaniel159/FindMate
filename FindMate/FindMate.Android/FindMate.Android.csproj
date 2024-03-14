@@ -106,5 +106,29 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\arrowBack.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\addContact.png" />
+    <AndroidResource Include="Resources\drawable\alertCircle.png" />
+    <AndroidResource Include="Resources\drawable\arrowDown.png" />
+    <AndroidResource Include="Resources\drawable\cameraIcon.png" />
+    <AndroidResource Include="Resources\drawable\locationIcon.png" />
+    <AndroidResource Include="Resources\drawable\pictureIcon.png" />
+    <AndroidResource Include="Resources\drawable\planetIcon.png" />
+    <AndroidResource Include="Resources\drawable\searchLocation.png" />
+    <AndroidResource Include="Resources\drawable\tagIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bocanadaPic.jpg" />
+    <AndroidResource Include="Resources\drawable\impalaPic.jpg" />
+    <AndroidResource Include="Resources\drawable\machinePic.jpg" />
+    <AndroidResource Include="Resources\drawable\sodaStereoPic.jpg" />
+    <AndroidResource Include="Resources\drawable\strokesPic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\crossQuit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sendIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

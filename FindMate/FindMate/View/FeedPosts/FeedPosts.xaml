@@ -6,32 +6,30 @@
         <StackLayout BackgroundColor="#FFF">
             <FlexLayout Direction="Row" JustifyContent="SpaceBetween">
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="X"
-                           TextColor="#000"/>
+                    <ImageButton Source="crossQuit.png" BackgroundColor="#fff" WidthRequest="32"
+                                 Margin="15,0,0,0"/>
                     <Label Text="New Post"
-                           TextColor="#000"/>
+                           TextColor="#000" FontSize="22" Margin="0,15,0,0" />
                 </StackLayout>
-                <Frame BackgroundColor="#0667DB"
-                       Padding="10"
-                       CornerRadius="18"
+                <Frame BackgroundColor="#0667DB" Padding="8" CornerRadius="12"
+                       Margin="10"
                        >
-                    <StackLayout>
+                    <StackLayout Orientation="Horizontal">
                         <Label Text="Post"
                                FontAttributes="Bold"
                                FontSize="19"
                                TextColor="#fff"
                                />
-
+                        <Image Source="sendIcon.png" WidthRequest="20" />
                     </StackLayout>
                 </Frame>
             </FlexLayout>
-            <StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand">
                 <Label Text="Ingresar Datos del desaparecido"
-                       TextColor="#000"/>
+                       TextColor="#757575" Margin="40,0,0,10" FontSize="20"/>
                 <FlexLayout Direction="Row" JustifyContent="Center">
                     <StackLayout>
-                        <Label Text="User"
-                               TextColor="#000"/>
+                        <Image Source="userIcon.png" WidthRequest="40" Margin="0,0,10,0"/>
                     </StackLayout>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -45,44 +43,102 @@
                             <RowDefinition Height="auto"></RowDefinition>
                             <RowDefinition Height="auto"></RowDefinition>
                             <RowDefinition Height="auto"></RowDefinition>
-                            
+
                         </Grid.RowDefinitions>
 
-                        <Entry Grid.Row="0" Grid.Column="0" Placeholder="Nombres y Apellidos" TextColor="#000" PlaceholderColor="#848484" 
-                               BackgroundColor="#DBDBDB" VerticalOptions="CenterAndExpand" ClearButtonVisibility="WhileEditing"/>
+                        <Frame Grid.Row="0" Grid.Column="0" Padding="10,1,10,2" CornerRadius="15" BackgroundColor="#DBDBDB">
+                            <Entry Placeholder="Nombres y Apellidos" TextColor="#000" PlaceholderColor="#848484" 
+                                   VerticalOptions="CenterAndExpand" ClearButtonVisibility="WhileEditing" FontAttributes="Bold"/>
+                        </Frame>
 
-                        <Entry Grid.Row="0" Grid.Column="1" Placeholder="Edad" Keyboard="Numeric" TextColor="#000" PlaceholderColor="#848484" 
-                               BackgroundColor="#DBDBDB"/>
+                        <Frame Grid.Row="0" Grid.Column="1" Padding="10,1,10,2" CornerRadius="15" BackgroundColor="#DBDBDB">
+                            <Entry Placeholder="Edad" Keyboard="Numeric" TextColor="#000" PlaceholderColor="#848484" 
+                                   BackgroundColor="#DBDBDB" FontAttributes="Bold"/>
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="0" Padding="10,1,10,2" CornerRadius="15" BackgroundColor="#DBDBDB">
+                            <Entry Placeholder="Número de Contacto" TextColor="#000" PlaceholderColor="#848484"
+                                   BackgroundColor="#DBDBDB" VerticalOptions="CenterAndExpand" ClearButtonVisibility="WhileEditing" FontAttributes="Bold"/>
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="1" Padding="10,1,10,2" CornerRadius="15" BackgroundColor="#DBDBDB">
+                            <Entry Placeholder="Género" TextColor="#000" PlaceholderColor="#848484"
+                                   BackgroundColor="#DBDBDB" FontAttributes="Bold"/>
+                        </Frame>
+                        <Frame Grid.Row="2" Grid.Column="0" Padding="10,1,10,2" CornerRadius="15" BackgroundColor="#DBDBDB">
+                            <Entry Placeholder="Zona desaparecida" TextColor="#000" PlaceholderColor="#848484"
+                                   BackgroundColor="#DBDBDB" VerticalOptions="CenterAndExpand" ClearButtonVisibility="WhileEditing" FontAttributes="Bold"/>
+                        </Frame>
+                        <Frame Grid.Row="2" Grid.Column="1" Padding="10,1,10,2" CornerRadius="15" BackgroundColor="#DBDBDB">
+                            <Entry Placeholder="Fecha" TextColor="#000" PlaceholderColor="#848484"
+                                   BackgroundColor="#DBDBDB" FontAttributes="Bold"/>
+                        </Frame>
+                        <Frame Grid.Row="3" Grid.ColumnSpan="2" HeightRequest="120" Padding="10,1,10,2" CornerRadius="15" BackgroundColor="#DBDBDB">
+                            <Entry Placeholder="Descripción de la persona" TextColor="#000" PlaceholderColor="#848484"
+                                   BackgroundColor="#DBDBDB" ClearButtonVisibility="WhileEditing" VerticalTextAlignment="Start" FontAttributes="Bold"/>
+                        </Frame>
 
-                        <Entry Grid.Row="1" Grid.Column="0" Placeholder="Número de Contacto" TextColor="#000" PlaceholderColor="#848484"
-                               BackgroundColor="#DBDBDB" VerticalOptions="CenterAndExpand" ClearButtonVisibility="WhileEditing"/>
+                        <ImageButton Source="https://ovejanegra.com.pe/wp-content/uploads/2023/03/Makanaky.jpg" Grid.Row="4" Grid.Column="0"
+                               WidthRequest="100" BackgroundColor="#fff" Aspect="AspectFill" CornerRadius="12"/>
 
-                        <Entry Grid.Row="1" Grid.Column="1" Placeholder="Género" TextColor="#000" PlaceholderColor="#848484"
-                                BackgroundColor="#DBDBDB"/>
+                        <ImageButton Source="https://cdn.jwplayer.com/v2/media/cvKxPGqx/poster.jpg?width=720" Grid.Row="4" Grid.Column="1"
+                               WidthRequest="100" BackgroundColor="#fff" Aspect="AspectFill" CornerRadius="12"/>
 
-                        <Entry Grid.Row="2" Grid.Column="0" Placeholder="Zona desaparecida" TextColor="#000" PlaceholderColor="#848484"
-                               BackgroundColor="#DBDBDB" VerticalOptions="CenterAndExpand" ClearButtonVisibility="WhileEditing"/>
-
-                        <Entry Grid.Row="2" Grid.Column="1" Placeholder="Fecha" TextColor="#000" PlaceholderColor="#848484"
-                               BackgroundColor="#DBDBDB"/>
-
-                        <Entry Grid.ColumnSpan="2" Grid.Row="3" HeightRequest="120" Placeholder="Descripción de la persona" TextColor="#000" PlaceholderColor="#848484"
-                               BackgroundColor="#DBDBDB" ClearButtonVisibility="WhileEditing" VerticalTextAlignment="Start"/>
-
-                        <Image Source="https://ovejanegra.com.pe/wp-content/uploads/2023/03/Makanaky.jpg" Grid.Row="4" Grid.Column="0"
-                               WidthRequest="100"/>
-
-                        <Image Source="https://cdn.jwplayer.com/v2/media/cvKxPGqx/poster.jpg?width=720" Grid.Row="4" Grid.Column="1"
-                               WidthRequest="100" />
-
-                        <FlexLayout Grid.Row="5" Grid.Column="0" JustifyContent="SpaceAround">
-                            <Button Text="Add Location" Grid.Row="5" Grid.Column="0" CornerRadius="10"
+                        <FlexLayout Grid.Row="5" Grid.Column="0" JustifyContent="SpaceEvenly">
+                            <Frame BackgroundColor="#0667DB" Padding="5" CornerRadius="10">
+                                <StackLayout Orientation="Horizontal" Spacing="5">
+                                    <Image Source="searchLocation.png" WidthRequest="15"/>
+                                    <Label Text="Add location" FontSize="13" FontAttributes="Bold" TextColor="#fff"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="#0667DB" Padding="5" CornerRadius="10">
+                                <StackLayout Orientation="Horizontal" Spacing="5">
+                                    <Image Source="addContact.png" WidthRequest="15"/>
+                                    <Label Text="Add contact" FontSize="13" FontAttributes="Bold" TextColor="#fff"/>
+                                </StackLayout>
+                            </Frame>
+                            <!--<Button Text="Add Location" Grid.Row="5" Grid.Column="0" CornerRadius="10"
                                     BackgroundColor="#0667DB" FontSize="10"/>
                             <Button Text="Add Contact" Grid.Row="5" Grid.Column="0" CornerRadius="10"
-                                    BackgroundColor="#0667DB" FontSize="10"/>
+                                    BackgroundColor="#0667DB" FontSize="10"/>-->
                         </FlexLayout>
                     </Grid>
                 </FlexLayout>
+                <StackLayout VerticalOptions="EndAndExpand">
+                    <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                        <ImageButton Source="cameraIcon.png" BackgroundColor="#fff" WidthRequest="38"/>
+                        <StackLayout Orientation="Horizontal">
+                            <ImageButton Source="bocanadaPic.jpg" WidthRequest="50" CornerRadius="10" BackgroundColor="#fff"/>
+                            <ImageButton Source="strokesPic.jpg" WidthRequest="50" CornerRadius="10" BackgroundColor="#fff"/>
+                            <ImageButton Source="machinePic.jpg" WidthRequest="50" CornerRadius="10" BackgroundColor="#fff"/>
+                            <ImageButton Source="impalaPic.jpg" WidthRequest="50" CornerRadius="10" BackgroundColor="#fff"/>
+                            <ImageButton Source="sodaStereoPic.jpg" WidthRequest="50" CornerRadius="10" BackgroundColor="#fff"/>
+                        </StackLayout>
+                        <ImageButton Source="arrowDown.png" BackgroundColor="#fff" WidthRequest="40"/>
+                    </FlexLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,0,0,5"
+                                 Padding="5">
+                        <Frame Padding="5" CornerRadius="10" BackgroundColor="#0667DB" Margin="10,0,0,0">
+                            <FlexLayout Direction="Row" AlignContent="Center">
+                                <Image Source="planetIcon.png" Margin="0,0,5,0" WidthRequest="25"/>
+                                <Label Text="Who can see it?" Margin="0,4,0,0"
+                                       FontAttributes="Bold" FontSize="14" TextColor="#fff"/>
+                            </FlexLayout>
+                        </Frame>
+                    </StackLayout>
+                    <FlexLayout AlignContent="Center" JustifyContent="SpaceBetween">
+                        <StackLayout Orientation="Horizontal" Margin="10,0,0,10">
+                            <ImageButton  Source="pictureIcon.png" BackgroundColor="#fff" WidthRequest="30"
+                                          Margin="10,0"/>
+                            <ImageButton Source="tagIcon.png" BackgroundColor="#fff" WidthRequest="30"
+                                         Margin="10,0"/>
+                            <ImageButton Source="locationIcon.png" BackgroundColor="#fff" WidthRequest="30"
+                                         Margin="8,0"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <ImageButton Source="alertCircle.png" BackgroundColor="#fff" WidthRequest="30"
+                                         Margin="0,0,15,0"/>
+                        </StackLayout>
+                    </FlexLayout>
+                </StackLayout>
             </StackLayout>
             
         </StackLayout>
