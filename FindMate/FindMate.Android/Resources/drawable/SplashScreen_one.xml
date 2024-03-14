@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- SplashScreen Structure -->
+	<item>
+		<!-- Background Color of our Screen -->
+		<color android:color="@color/splash_background"></color>
+	</item>
+	<item>
+		<!-- The image of the background -->
+		<bitmap android:drawable="@drawable/background"
+				android:tileMode="disabled"
+				android:gravity="center"/>
+	</item>
+</layer-list>
