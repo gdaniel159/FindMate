@@ -1,0 +1,55 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FindMate.View.FeedPrincipal.FeedPrincipal">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Source="logo.png" WidthRequest="50" HeightRequest="50" Margin="10" HorizontalOptions="Start" VerticalOptions="Start"/>
+
+            <Image Grid.Row="0" Grid.Column="1" Source="findmate.png" WidthRequest="110" HeightRequest="100" Margin="-8,-13,10,10" HorizontalOptions="Start" VerticalOptions="Start" />
+
+            <Image Grid.Row="0" Grid.Column="2" Source="flecha.png" WidthRequest="22" HeightRequest="22" Margin="-14,22,10,10" HorizontalOptions="Start" VerticalOptions="Start" />
+
+            <Image Grid.Row="0" Grid.Column="3" Source="agregarft.png" WidthRequest="30" HeightRequest="30" Margin="22,22,10,10" HorizontalOptions="Start" VerticalOptions="Start" />
+
+            <Image Grid.Row="0" Grid.Column="4" Source="campana.png" WidthRequest="30" HeightRequest="30" Margin="5,22,10,10" HorizontalOptions="Start" VerticalOptions="Start" />
+
+            <Image Grid.Row="0" Grid.Column="5" Source="mensaje.png" WidthRequest="30" HeightRequest="30" Margin="10,22,10,10" HorizontalOptions="Start" VerticalOptions="Start" />
+
+            <BoxView Grid.Row="1" Grid.ColumnSpan="6" HeightRequest="2" BackgroundColor="LightGray" Margin="10,-20,10,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+
+
+            <StackLayout Grid.Row="2" Grid.ColumnSpan="6" Orientation="Vertical" HorizontalOptions="Start" VerticalOptions="Start" Margin="10,-20,0,0">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                    <Image Source="usuario.png" WidthRequest="50" HeightRequest="50" Margin="5,0,0,0" />
+                    <Image Source="nombre.png" WidthRequest="50" HeightRequest="50" Margin="9,0,0,0" />
+                    <Image Source="ubicacion.png" WidthRequest="40" HeightRequest="40" Margin="140,0,0,0" />
+                    <Image Source="puntos.png" WidthRequest="45" HeightRequest="45" Margin="10,0,0,0" />
+                </StackLayout>
+
+                <Image Source="chica.png" WidthRequest="394" HeightRequest="600" HorizontalOptions="Center" Margin="-11,-80,0,80"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start">
+                    <Image Source="reacciones.png" WidthRequest="100" HeightRequest="100" Margin="-30,-320,5,0" />
+                    <Image Source="pasar.png" WidthRequest="100" HeightRequest="100" Margin="30,-320,5,0" />
+                    <Image Source=".png" WidthRequest="80" HeightRequest="100" Margin="5,-70,5,0" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
