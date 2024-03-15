@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FindMate.View.FeedPosts
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FeedPosts : ContentPage
+    public partial class FeedPost : ContentPage
     {
-        public FeedPosts()
+        public FeedPost()
         {
             InitializeComponent();
         }

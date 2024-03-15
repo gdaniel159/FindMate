@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FindMate.View.NotificAlert
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NotificAlert : ContentPage
+    public partial class NotificAlerts : ContentPage
     {
-        public NotificAlert()
+        public NotificAlerts()
         {
             InitializeComponent();
         }

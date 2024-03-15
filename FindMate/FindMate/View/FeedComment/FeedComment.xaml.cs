@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FindMate.View.FeedComment
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FeedComment : ContentPage
+    public partial class FeedComments : ContentPage
     {
-        public FeedComment()
+        public FeedComments()
         {
             InitializeComponent();
         }
