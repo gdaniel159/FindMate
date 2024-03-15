@@ -1,5 +1,5 @@
-﻿using FindMate.View.FeedComment;
-using FindMate.View.FeedPosts;
+﻿using FindMate.View.FeedPosts;
+using FindMate.View.FeedPrincipal;
 using FindMate.View.NotificAlert;
 using System;
 using System.Collections.Generic;
@@ -21,7 +21,7 @@ namespace FindMate
         }
         private void btnIniciar_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new FeedComment());
+            Navigation.PushAsync(new FeedPrincipal());
         }
         private void btnRegister_Clicked(object sender, EventArgs e)
         {
