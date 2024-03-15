@@ -29,7 +29,7 @@
                         <FlexLayout>
                             <Image Source="policealert.png" WidthRequest="160" HeightRequest="100"/>
                             <StackLayout Margin="5,0,0,0">
-                                <Label Text="Contactar con usuario" TextColor="#000"
+                                <Label Text="Contacto Policial" TextColor="#000"
                                        FontAttributes="Bold" FontSize="21"/>
                                 <Label Text="Para contactarse con una central policial para dar a seguimiento del caso y brindar informacion directamente" 
                                        TextColor="#000" FontSize="17"/>
