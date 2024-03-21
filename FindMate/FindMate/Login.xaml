@@ -32,20 +32,20 @@
                 <StackLayout Margin="0, 20, 0, 0">
 
                     <Frame Padding="10" BackgroundColor="Transparent" BorderColor="#bdc3c7" CornerRadius="15" Margin="30, 10, 30, 0" HasShadow="True">
-                        <Entry Placeholder="Correo Electrónico" x:Name="lblEmail">
+                        <Entry Placeholder="Correo Electrónico" x:Name="lblEmail" Text="{Binding Email}">
                             <Entry.Effects>
                                 <tool:RemoveBorderEffect />
                             </Entry.Effects>
                         </Entry>
                     </Frame>
                     <Frame Padding="10" BackgroundColor="Transparent" BorderColor="#bdc3c7" CornerRadius="15" Margin="30, 15, 30, 0">
-                        <Entry Placeholder="Contraseña" IsPassword="True" x:Name="lblPsw">
+                        <Entry Placeholder="Contraseña" IsPassword="True" x:Name="lblPsw" Text="{Binding Password}">
                             <Entry.Effects>
                                 <tool:RemoveBorderEffect />
                             </Entry.Effects>
                         </Entry>
                     </Frame>
-                    <Button Text="Iniciar Sesión" Margin="30, 30, 30, 0" Background="#007BFF" TextColor="White" CornerRadius="35" Padding="0, 24, 0, 24" x:Name="btnIniciar" Clicked="btnIniciar_Clicked"></Button>
+                    <Button Text="Iniciar Sesión" Margin="30, 30, 30, 0" Background="#007BFF" TextColor="White" CornerRadius="35" Padding="0, 24, 0, 24" x:Name="btnIniciar"  Command="{Binding LoginCommand}"></Button>
                     <Button BackgroundColor="Transparent" Text="Olvidó su contraseña?" Margin="30, 40, 30, 0" FontSize="18" TextColor="#007BFF" x:Name="btnOlvidar" Clicked="btnOlvidar_Clicked"></Button>
 
                 </StackLayout>

@@ -22,7 +22,7 @@
                 <StackLayout Margin="5, 10, 5, 20">
                     <Label Text="DNI" TextColor="#0567db" FontSize="20"/>
                     <Frame Padding="10" BackgroundColor="Transparent" BorderColor="#bdc3c7" CornerRadius="15">
-                        <Entry Placeholder="Ingresa tu DNI">
+                        <Entry Placeholder="Ingresa tu DNI" x:Name="entryDNI">
                             <Entry.Effects>
                                 <tool:RemoveBorderEffect />
                             </Entry.Effects>
@@ -33,7 +33,7 @@
                 <StackLayout Margin="5, 10, 5, 20">
                     <Label Text="Correo" TextColor="#0567db" FontSize="20"/>
                     <Frame Padding="10" BackgroundColor="Transparent" BorderColor="#bdc3c7" CornerRadius="15">
-                        <Entry Placeholder="Ingresa tu correo">
+                        <Entry Placeholder="Ingresa tu correo" x:Name="entryEmail">
                             <Entry.Effects>
                                 <tool:RemoveBorderEffect />
                             </Entry.Effects>
@@ -44,7 +44,7 @@
                 <StackLayout Margin="5, 10, 5, 20">
                     <Label Text="Numero Telefonico" TextColor="#0567db" FontSize="20"/>
                     <Frame Padding="10" BackgroundColor="Transparent" BorderColor="#bdc3c7" CornerRadius="15">
-                        <Entry Placeholder="Ingresa tu numero ( +51 🇵🇪 )">
+                        <Entry Placeholder="Ingresa tu numero ( +51 🇵🇪 )" x:Name="entryPhone">
                             <Entry.Effects>
                                 <tool:RemoveBorderEffect />
                             </Entry.Effects>
@@ -55,7 +55,7 @@
                 <StackLayout Margin="5, 10, 5, 20">
                     <Label Text="Contraseña" TextColor="#0567db" FontSize="20"/>
                     <Frame Padding="10" BackgroundColor="Transparent" BorderColor="#bdc3c7" CornerRadius="15">
-                        <Entry Placeholder="Ingresa tu contraseña" IsPassword="True">
+                        <Entry Placeholder="Ingresa tu contraseña" IsPassword="True" x:Name="entryPsw">
                             <Entry.Effects>
                                 <tool:RemoveBorderEffect />
                             </Entry.Effects>

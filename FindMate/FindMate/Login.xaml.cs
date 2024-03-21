@@ -1,12 +1,5 @@
-﻿using FindMate.View.FeedPosts;
-using FindMate.View.FeedPrincipal;
-using FindMate.View.NotificAlert;
+﻿using FindMate.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,13 +8,12 @@ namespace FindMate
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage
     {
+        private readonly LoginViewModel viewModel;
         public Login()
         {
             InitializeComponent();
-        }
-        private void btnIniciar_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new FeedPrincipal());
+            viewModel = new LoginViewModel();
+            BindingContext = viewModel;
         }
         private void btnRegister_Clicked(object sender, EventArgs e)
         {

@@ -1,69 +1,79 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FindMate.View.FeedPrincipal.FeedPrincipal"
-             xmlns:tapped="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core">
-
+             xmlns:tapped="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-
-            <Image Source="logo.png" WidthRequest="50" HeightRequest="50" Margin="10" HorizontalOptions="Start" VerticalOptions="Start"/>
-
-            <Image Grid.Row="0" Grid.Column="1" Source="findmate.png" WidthRequest="110" HeightRequest="100" Margin="-8,-13,10,10" HorizontalOptions="Start" VerticalOptions="Start" />
-
-            <Image Grid.Row="0" Grid.Column="2" Source="flecha.png" WidthRequest="22" HeightRequest="22" Margin="-14,22,10,10" HorizontalOptions="Start" VerticalOptions="Start" />
-
-            <Image Grid.Row="0" Grid.Column="3" Source="agregarft.png" WidthRequest="30" HeightRequest="30" Margin="22,22,10,10" HorizontalOptions="Start" VerticalOptions="Start">
-                <Image.GestureRecognizers>
-                    <tapped:TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                </Image.GestureRecognizers>
-            </Image>
-            <Image Grid.Row="0" Grid.Column="4" Source="campana.png" WidthRequest="30" HeightRequest="30" Margin="5,22,10,10" HorizontalOptions="Start" VerticalOptions="Start">
-                <Image.GestureRecognizers>
-                    <tapped:TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2" />
-                </Image.GestureRecognizers>
-            </Image>
-
-            <Image Grid.Row="0" Grid.Column="5" Source="mensaje.png" WidthRequest="30" HeightRequest="30" Margin="10,22,10,10" HorizontalOptions="Start" VerticalOptions="Start">
-                <Image.GestureRecognizers>
-                    <tapped:TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
-                </Image.GestureRecognizers>
-            </Image>
-
-            <BoxView Grid.Row="1" Grid.ColumnSpan="6" HeightRequest="2" BackgroundColor="LightGray" Margin="10,-20,10,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
-
-
-            <StackLayout Grid.Row="2" Grid.ColumnSpan="6" Orientation="Vertical" HorizontalOptions="Start" VerticalOptions="Start" Margin="10,-20,0,0">
-
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
-                    <Image Source="usuario.png" WidthRequest="50" HeightRequest="50" Margin="5,0,0,0" />
-                    <Image Source="nombre.png" WidthRequest="50" HeightRequest="50" Margin="9,0,0,0" />
-                    <Image Source="ubicacion.png" WidthRequest="40" HeightRequest="40" Margin="140,0,0,0" />
-                    <Image Source="puntos.png" WidthRequest="45" HeightRequest="45" Margin="10,0,0,0" />
+        <StackLayout>
+            <FlexLayout JustifyContent="SpaceBetween" AlignContent="Center" AlignItems="Center">
+                <StackLayout>
+                    <FlexLayout AlignItems="Center">
+                        <Image Source="logo.png" WidthRequest="80" HeightRequest="80" Margin="20,10,20,0"></Image>
+                        <Label Text="FINDMATE" Margin="0, 10, 10, 0" FontSize="Large" FontAttributes="Bold"></Label>
+                        <Image Source="flecha.png" WidthRequest="30" HeightRequest="30"></Image>
+                    </FlexLayout>
                 </StackLayout>
-
-                <Image Source="chica.png" WidthRequest="394" HeightRequest="600" HorizontalOptions="Center" Margin="-11,-80,0,80"/>
-
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start">
-                    <Image Source="reacciones.png" WidthRequest="100" HeightRequest="100" Margin="-30,-320,5,0">
-                        
-                    </Image>
-                    <Image Source="pasar.png" WidthRequest="100" HeightRequest="100" Margin="30,-320,5,0" />
-                    <Image Source=".png" WidthRequest="80" HeightRequest="100" Margin="5,-70,5,0" />
+                <StackLayout>
+                    <Image Source="campana.png" WidthRequest="80" HeightRequest="80" Margin="0, 0, 20, 0"></Image>
                 </StackLayout>
+            </FlexLayout>
+            <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="0, 15, 0, 0"/>
+            <ScrollView>
+                <Frame BorderColor="#000" Margin="20">
+                    <StackLayout>
+                        <StackLayout Margin="0, 0, 0, 10">
+                            <Label Text="ALERTA FINDMATE" FontSize="25" HorizontalTextAlignment="Center"></Label>
+                            <Label Text="N° DE REPORTE" FontSize="16" HorizontalTextAlignment="Center"></Label>
+                            <Label Text="AFM #548" FontSize="16" HorizontalTextAlignment="Center"></Label>
+                        </StackLayout>
+                        <Image Source="chica"></Image>
+                        <FlexLayout JustifyContent="SpaceAround">
+                            <Label Text="Fecha de desaparición:" FontSize="Body"></Label>
+                            <Label Text="18 Marzo 2024" FontSize="Body"></Label>
+                        </FlexLayout>
+                        <FlexLayout JustifyContent="SpaceAround">
+                            <Label Text="Nombre y Apellido:" FontSize="Body"></Label>
+                            <Label Text="Maria Fernanda Caso Peña" FontSize="Body"></Label>
+                        </FlexLayout>
+                        <FlexLayout JustifyContent="SpaceAround">
+                            <Label Text="Edad:" FontSize="Body"></Label>
+                            <Label Text="25 años" FontSize="Body"></Label>
+                        </FlexLayout>
+                        <FlexLayout JustifyContent="SpaceAround">
+                            <Label Text="Fecha de nacimiento:" FontSize="Body"></Label>
+                            <Label Text="18 JULIO 1998" FontSize="Body"></Label>
+                        </FlexLayout>
+                        <FlexLayout JustifyContent="SpaceAround">
+                            <Label Text="Género:" FontSize="Body"></Label>
+                            <Label Text="Femenino" FontSize="Body"></Label>
+                        </FlexLayout>
+                        <FlexLayout JustifyContent="SpaceAround">
+                            <Label Text="Nacionalidad:" FontSize="Body"></Label>
+                            <Label Text="Peruana" FontSize="Body"></Label>
+                        </FlexLayout>
+                        <FlexLayout JustifyContent="SpaceAround">
+                            <Label Text="Originaria:" FontSize="Body"></Label>
+                            <Label Text="Lima" FontSize="Body"></Label>
+                        </FlexLayout>
+                        <FlexLayout JustifyContent="SpaceAround" AlignItems="Center" Margin="0, 20, 0, 0">
+                            <Button Text="VER DETALLES" x:Name="btnVerDetalles" Clicked="btnVerDetalles_Clicked"></Button>
+                            <Image Source="campana" WidthRequest="30" HeightRequest="30">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label Text="Desaparecida" TextColor="Red" FontSize="Medium"></Label>
+                        </FlexLayout>
+                    </StackLayout>
+                </Frame>
+            </ScrollView>
+            <StackLayout VerticalOptions="EndAndExpand" Margin="0,0,0,10">
+                <FlexLayout JustifyContent="SpaceAround">
+                    <ImageButton Source="homeIco.png" BackgroundColor="#fff" WidthRequest="30"/>
+                    <ImageButton Source="magnifier.png" BackgroundColor="#fff" WidthRequest="30"/>
+                    <ImageButton Source="userIcon.png" BackgroundColor="#fff" WidthRequest="30"/>
+                </FlexLayout>
             </StackLayout>
-        </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

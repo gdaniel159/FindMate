@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FindMate.View.FeedPrincipal.VerDetalles"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout>
+            <FlexLayout JustifyContent="SpaceBetween" AlignContent="Center" AlignItems="Center">
+                <StackLayout>
+                    <FlexLayout AlignItems="Center">
+                        <Image Source="logo.png" WidthRequest="80" HeightRequest="80" Margin="20,10,20,0"></Image>
+                        <Label Text="FINDMATE" Margin="0, 10, 10, 0" FontSize="Large" FontAttributes="Bold"></Label>
+                        <Image Source="flecha.png" WidthRequest="30" HeightRequest="30"></Image>
+                    </FlexLayout>
+                </StackLayout>
+                <StackLayout>
+                    <Image Source="campana.png" WidthRequest="80" HeightRequest="80" Margin="0, 0, 20, 0"></Image>
+                </StackLayout>
+            </FlexLayout>
+            <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="0, 15, 0, 0"/>
+            <ScrollView>
+                <Frame BorderColor="#000" Margin="20">
+                    <StackLayout>
+                        <StackLayout Margin="0, 0, 0, 10">
+                            <Image Source="arrowBack" WidthRequest="30" HeightRequest="30" HorizontalOptions="Start">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label Text="ALERTA FINDMATE" FontSize="25" HorizontalTextAlignment="Center"></Label>
+                            <Label Text="N° DE REPORTE" FontSize="16" HorizontalTextAlignment="Center"></Label>
+                            <Label Text="AFM #548" FontSize="16" HorizontalTextAlignment="Center"></Label>
+                        </StackLayout>
+                        <FlexLayout Direction="Row">
+                            <Frame BorderColor="#000" Margin="20">
+                                <Image Source="chica" Aspect="AspectFill"></Image>
+                            </Frame>
+                            <StackLayout>
+                                <FlexLayout Direction="Column">
+                                    <Label Text="Fecha de desaparición:" FontSize="Body"></Label>
+                                    <Label Text="18 Marzo 2024" FontSize="Body"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Column">
+                                    <Label Text="Nombre y Apellido:" FontSize="Body"></Label>
+                                    <Label Text="Maria Fernanda Caso Peña" FontSize="Body"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Column">
+                                    <Label Text="Edad:" FontSize="Body"></Label>
+                                    <Label Text="25 años" FontSize="Body"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Column">
+                                    <Label Text="Fecha de nacimiento:" FontSize="Body"></Label>
+                                    <Label Text="18 JULIO 1998" FontSize="Body"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Column">
+                                    <Label Text="Género:" FontSize="Body"></Label>
+                                    <Label Text="Femenino" FontSize="Body"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Column">
+                                    <Label Text="Nacionalidad:" FontSize="Body"></Label>
+                                    <Label Text="Peruana" FontSize="Body"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Column">
+                                    <Label Text="Originaria:" FontSize="Body"></Label>
+                                    <Label Text="Lima" FontSize="Body"></Label>
+                                </FlexLayout>
+                            </StackLayout>
+                        </FlexLayout>
+                        <StackLayout>
+                            <Label Text="Descripción"></Label>
+                            <StackLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Complexión: "/>
+                                    <Label Text="Delgada"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Tez: "/>
+                                    <Label Text="Blanca"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Estatura: "/>
+                                    <Label Text="1.60 Metros Aprox."></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Cara: "/>
+                                    <Label Text="Ovalada"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Menton: "/>
+                                    <Label Text="Ovalado"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Ojos: "/>
+                                    <Label Text="Marrones"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Cejas: "/>
+                                    <Label Text="Pobladas"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Frente: "/>
+                                    <Label Text="Estrecha"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Orejas: "/>
+                                    <Label Text="Pequeñas"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Cabello: "/>
+                                    <Label Text="Lacio, Negro"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Nariz: "/>
+                                    <Label Text="Pequeña, Respingada"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Boca: "/>
+                                    <Label Text="Mediana"></Label>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                                    <Label Text="Seña Particular: "/>
+                                    <Label Text="Rasgos Asiaticos"></Label>
+                                </FlexLayout>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout>
+                            <Frame BorderColor="#000" Margin="0, 20, 0, 0">
+                                <Label Text="DESAPARECIDA" TextColor="Red" FontSize="35" HorizontalTextAlignment="Center" FontAttributes="Bold"></Label>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Margin="0, 15, 0, 0">
+                            <Label Text="INFORMACIÓN A LOS TELEFONOS" TextColor="Red" HorizontalOptions="Center" FontAttributes="Bold"></Label>
+                            <Label Text="963-852-741 / 987-654-321" TextColor="Red" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </ScrollView>
+            <StackLayout VerticalOptions="EndAndExpand" Margin="0,0,0,10">
+                <FlexLayout JustifyContent="SpaceAround">
+                    <ImageButton Source="homeIco.png" BackgroundColor="#fff" WidthRequest="30"/>
+                    <ImageButton Source="magnifier.png" BackgroundColor="#fff" WidthRequest="30"/>
+                    <ImageButton Source="userIcon.png" BackgroundColor="#fff" WidthRequest="30"/>
+                </FlexLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
